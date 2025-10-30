@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Form</title>
+</head>
+<header>
+    <center>
+    <h2>PATIENT LOGIN PAGE</h2>
+    </center>
+</header>
+<body bgcolor="#FFF5EE">
+    <center>
+<form action="AddPatientServlet" method="post">
+
+    <table border="2px">
+
+        <tr>
+            <td>Patient ID:</td>
+            <td><input type="text" name="pid"></td>
+        </tr>
+
+        <tr>
+            <td>Patient Name:</td>
+            <td><input type="text" name="pname"></td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="m"> Male
+                <input type="radio" name="gender" value="f"> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Disease:</td>
+            <td>
+                <select name="disease" id="disease">
+                    <option value="">--Select Disease--</option>
+                    <option value="covid">COVID-19</option>
+                    <option value="fever">Fever</option>
+                    <option value="typhoid">Typhoid</option>
+                    <option value="malaria">Malaria</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Address:</td>
+            <td>
+                <textarea name="address" rows="4" cols="30"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Add">
+                &nbsp;
+                <input type="reset" value="Clear">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</center>
+
+
+</body>
+</html>
